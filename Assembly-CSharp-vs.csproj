@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{BC4290EB-3645-B0FC-FA4D-7B87AD6FBC9D}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\GUI\Menus\BiddingPopup.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\CreditsMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\CurrentTrump.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\DialogBox.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\EndGamePopup.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\InGameMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\LoadingScreen.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\ScoreBoard.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\ScoreBoardButton.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\SettingsMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\SinglePlayerCreationMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\Menus\TrumpSelection.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\CreateRoomMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\CreateRoomResultMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\JoinRoomResultScreen.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\LobbyPlayerStats.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\LoginResultScreen.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\LoginScreen.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\PasswordEnterMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\RegisterResultScreen.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\RegisterScreen.cs" />
+     <Compile Include="Assets\Scripts\GUI\Online Menus\RoomSelectionMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\Other\PlayedCardsController.cs" />
+     <Compile Include="Assets\Scripts\GUI\Other\TurnArrowController.cs" />
+     <Compile Include="Assets\Scripts\GUI\Other\TurnTimeoutHandler.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Mono Actors\MonoComputer.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Mono Actors\MonoNetworkPlayer.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Mono Actors\MonoNetworkPlayerBase.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Mono Actors\MonoPlayer.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Mono Actors\MonoRemoteNetworkPlayer.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Mono Actors\UICard.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Mono Actors\UIDeck.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Mono Actors\UIGameTable.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\LocalNetworkPlayer.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\NetworkPlayerBase.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\RemoteNetworkPlayer.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\UIComputer.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\UIHand.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\UIPlayer.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\UnityGame.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\UnityInitialPhase.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\UnityRound.cs" />
+     <Compile Include="Assets\Scripts\Game\Actors\Unity-Side Actors\UnityTable.cs" />
+     <Compile Include="Assets\Scripts\Game\Structure\CardSlot.cs" />
+     <Compile Include="Assets\Scripts\Game\Structure\MultiplayerGamersCommunicator.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Api\AdPosition.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Api\AdRequest.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Api\AdSize.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Api\BannerView.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Api\Gender.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Api\InterstitialAd.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Common\DummyClient.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Common\IAdListener.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Common\IGoogleMobileAdsBannerClient.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Common\IGoogleMobileAdsInterstitialClient.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Platforms\Android\AdListener.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Platforms\Android\AndroidBannerClient.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Platforms\Android\AndroidInterstitialClient.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Platforms\Android\Utils.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Platforms\GoogleMobileAdsClientFactory.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Platforms\iOS\Externs.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Platforms\iOS\IOSBannerClient.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Platforms\iOS\IOSInterstitialClient.cs" />
+     <Compile Include="Assets\Scripts\GoogleMobileAds\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
+     <Compile Include="Assets\Scripts\System\AdsManager.cs" />
+     <Compile Include="Assets\Scripts\System\ByteHelper.cs" />
+     <Compile Include="Assets\Scripts\System\ConnectivityManager.cs" />
+     <Compile Include="Assets\Scripts\System\DialogBoxButtons.cs" />
+     <Compile Include="Assets\Scripts\System\LanguageManager.cs" />
+     <Compile Include="Assets\Scripts\System\LogManager.cs" />
+     <Compile Include="Assets\Scripts\System\MultiplayerListener.cs" />
+     <Compile Include="Assets\Scripts\System\MultiplayerManager.cs" />
+     <Compile Include="Assets\Scripts\System\Properties.cs" />
+     <Compile Include="Assets\Scripts\System\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\System\TimeoutTimer.cs" />
+     <Compile Include="Assets\Scripts\System\UserInteraction.cs" />
+     <Compile Include="Assets\Scripts\System\UserManagement.cs" />
+     <None Include="Assets\Resources\Languages\en.txt" />
+     <None Include="Assets\Resources\Languages\tr.txt" />
+     <None Include="Assets\Plugins\WP8\GoogleAds.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="AI">
+ <HintPath>D:/UnityProjects/Batak/Assets/Library/AI.dll</HintPath>
+ </Reference>
+ <Reference Include="Common">
+ <HintPath>D:/UnityProjects/Batak/Assets/Library/Common.dll</HintPath>
+ </Reference>
+ <Reference Include="Game">
+ <HintPath>D:/UnityProjects/Batak/Assets/Library/Game.dll</HintPath>
+ </Reference>
+ <Reference Include="App42_Unity3D_SDK_2.9.4">
+ <HintPath>D:/UnityProjects/Batak/Assets/Library/Multiplayer/App42_Unity3D_SDK_2.9.4.dll</HintPath>
+ </Reference>
+ <Reference Include="AppWarpUnityMobile">
+ <HintPath>D:/UnityProjects/Batak/Assets/Library/Multiplayer/AppWarpUnityMobile.dll</HintPath>
+ </Reference>
+ <Reference Include="AdMobUnityPlugin">
+ <HintPath>D:/UnityProjects/Batak/Assets/Plugins/AdMobUnityPlugin.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
